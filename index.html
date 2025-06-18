@@ -7,17 +7,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- NAVBAR -->
   <nav>
-    <div class="nav-left">🚀 Startup Sentral</div>
-    <div class="nav-right">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </div>
+    <ul>
+      <li><a href="#" onclick="showHome()">Home</a></li>
+      <li><a href="#" onclick="showAbout()">About</a></li>
+      <li><a href="#" onclick="showContact()">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- MAIN CONTENT -->
   <div id="main-content">
     <h1>Welcome to Startup Sentral</h1>
     <div id="buttons">
@@ -25,50 +22,35 @@
       <button id="signup-btn">Sign Up</button>
     </div>
 
-    <!-- LOGIN FORM -->
     <form id="login-form" onsubmit="handleLogin(event)" style="display: none;">
       <h2>Login</h2>
-      <input type="text" id="login-name" placeholder="Name" required>
-      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="text" id="login-name" placeholder="Name" required><br><br>
+      <input type="email" id="login-email" placeholder="Email" required><br><br>
       <select id="login-user-type" required>
         <option value="">Select User Type</option>
         <option value="startup">Startup Founder</option>
         <option value="investor">Investor</option>
-      </select>
-      <input type="password" id="login-password" placeholder="Password" required>
+      </select><br><br>
+      <input type="password" id="login-password" placeholder="Password" required><br><br>
       <button type="submit">Login</button>
     </form>
 
-    <!-- SIGNUP FORM -->
     <form id="signup-form" onsubmit="handleSignUp(event)" style="display: none;">
       <h2>Sign Up</h2>
-      <input type="text" id="signup-name" placeholder="Name" required>
-      <input type="email" id="signup-email" placeholder="Email" required>
+      <input type="text" id="signup-name" placeholder="Name" required><br><br>
+      <input type="email" id="signup-email" placeholder="Email" required><br><br>
       <select id="signup-user-type" required>
         <option value="">Select User Type</option>
         <option value="startup">Startup Founder</option>
         <option value="investor">Investor</option>
-      </select>
-      <input type="password" id="signup-password" placeholder="Create Password" required>
+      </select><br><br>
+      <input type="password" id="signup-password" placeholder="Create Password" required><br><br>
       <button type="submit">Sign Up</button>
     </form>
   </div>
 
-  <!-- DASHBOARD -->
   <div id="dashboard" style="display: none;"></div>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>💡 Empowering Startups | Connecting Investors | © 2025 Startup Sentral</p>
-  </footer>
-
-  <!-- FontAwesome (for icons) -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-  <!-- Your script.js -->
   <script src="script.js"></script>
 </body>
-
 </html>
-<button onclick="getSelectedFilters()">Submit Filters</button>
-<link rel="stylesheet" href="style.css" />

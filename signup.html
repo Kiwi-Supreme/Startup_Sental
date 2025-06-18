@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    body {
+      background-color: #4d2c24;
+      color: white;
+      text-align: center;
+      font-family: Arial;
+    }
+    input, select {
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Sign Up</h2>
+  <form onsubmit="handleSignUp(event)">
+    <input type="text" placeholder="Name" required><br>
+    <input type="email" placeholder="Email" required><br>
+    <select id="signup-type" required>
+      <option value="">User Type</option>
+      <option value="startup">Startup Founder</option>
+      <option value="investor">Investor</option>
+    </select><br>
+    <input type="password" placeholder="Password" required><br>
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <script>
+    function handleSignUp(event) {
+      event.preventDefault();
+      const type = document.getElementById("signup-type").value;
+      window.location.href = type === 'investor' ? 'investor-dashboard.html' : 'startup-dashboard.html';
+    }
+  </script>
+</body>
+</html>

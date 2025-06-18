@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+      background-color: #4d2c24;
+      color: white;
+      text-align: center;
+      font-family: Arial;
+    }
+    input, select {
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Login</h2>
+  <form onsubmit="handleLogin(event)">
+    <input type="text" id="login-name" placeholder="Name" required><br>
+    <input type="email" id="login-email" placeholder="Email" required><br>
+    <select id="login-type" required>
+      <option value="">User Type</option>
+      <option value="startup">Startup Founder</option>
+      <option value="investor">Investor</option>
+    </select><br>
+    <input type="password" placeholder="Password" required><br>
+    <button type="submit">Login</button>
+  </form>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+      const type = document.getElementById("login-type").value;
+      window.location.href = type === 'investor' ? 'investor-dashboard.html' : 'startup-dashboard.html';
+    }
+  </script>
+</body>
+</html>
