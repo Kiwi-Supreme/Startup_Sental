@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #efebe9; /* Light brown */
+  color: #212121;
+}
+
+/* Navbar */
+nav {
+  background: #3e2723; /* Dark brown */
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  border-bottom: 3px solid #d7ccc8;
+}
+
+.nav-left {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nav-right a {
+  margin-left: 20px;
+  color: #fff3e0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-right a:hover {
+  color: #ffccbc;
+}
+
+/* Main content layout */
+#main-content {
+  text-align: center;
+  margin: 40px auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 700px;
+  background-color: #fbe9e7;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(62, 39, 35, 0.2);
+}
+
+/* Headings */
+h1 {
+  color: #4e342e;
+}
+
+h2 {
+  color: #5d4037;
+}
+
+/* Buttons */
+#buttons button,
+form button {
+  background-color: #6d4c41;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+#buttons button:hover,
+form button:hover {
+  background-color: #8d6e63;
+}
+
+/* Forms */
+form {
+  background-color: #fff8e1;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form input,
+form select {
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  font-size: 15px;
+  border: 1px solid #a1887f;
+  border-radius: 6px;
+  background-color: #fff3e0;
+  color: #212121;
+}
+
+/* Dashboard Filters */
+#dashboard {
+  background-color: #d7ccc8;
+  padding: 30px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(62, 39, 35, 0.2);
+}
+
+#dashboard h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3e2723;
+}
+
+#dashboard form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#dashboard label {
+  font-weight: bold;
+  color: #3e2723;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #3e2723;
+  color: #fff;
+  font-size: 14px;
+  border-top: 3px solid #d7ccc8;
+  margin-top: 50px;
+}
