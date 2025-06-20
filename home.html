@@ -2,53 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Startup Sentral | Home</title>
+  <title>Startup Sentral - Home</title>
   <style>
     body {
-      background-color: #4d2c24;
-      font-family: Arial, sans-serif;
-      color: #fff;
+      background-color: #fff3e6;
+      font-family: 'Segoe UI', sans-serif;
       text-align: center;
+      margin: 0;
     }
+
     nav {
+      background-color: #8B4513;
       padding: 15px;
-      background-color: #3a1f16;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
     }
-    nav button {
-      margin: 0 10px;
-      padding: 10px 20px;
-      color: white;
-      background-color: #000;
-      border: none;
+
+    .logo {
+      height: 50px;
+      border-radius: 50%;
       cursor: pointer;
     }
-    h1 {
-      margin-top: 50px;
-    }
-    .actions button {
-      margin: 10px;
-      padding: 15px 30px;
-      font-size: 16px;
-      background-color: #000;
-      color: white;
+
+    nav button {
+      margin-left: 15px;
+      padding: 8px 16px;
+      background-color: #d2a679;
       border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+
+    nav button:hover {
+      background-color: #a05f3c;
+    }
+
+    .main-content {
+      margin-top: 80px;
+    }
+
+    .main-content button {
+      padding: 12px 24px;
+      margin: 20px;
+      background-color: #deb887;
+      border: none;
+      border-radius: 8px;
+      color: #4b2e14;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .main-content button:hover {
+      background-color: #c98f65;
     }
   </style>
 </head>
 <body>
 
-  <nav class="navbar">
-  <img src="STARTUP-removebg-preview.png" alt="Startup Sentral Logo" class="logo">
-  <button onclick="showHome()">Home</button>
-  <button onclick="showAbout()">About</button>
-  <button onclick="showContact()">Contact</button>
-</nav>
+  <nav>
+    <img src="STARTUP-removebg-preview.png" class="logo" onclick="location.href='index.html'" />
+    <div>
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='about.html'">About</button>
+      <button onclick="location.href='contact.html'">Contact</button>
+    </div>
+  </nav>
 
-
-  <h1>Welcome to Startup Sentral</h1>
-  <div class="actions">
-    <button onclick="window.location.href='login.html'">Login</button>
-    <button onclick="window.location.href='signup.html'">Sign Up</button>
+  <div class="main-content">
+    <h1>Welcome to Startup Sentral</h1>
+    <button onclick="location.href='login.html'">Login</button>
+    <button onclick="location.href='signup.html'">Sign Up</button>
   </div>
 
 </body>

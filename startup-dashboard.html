@@ -1,33 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Startup Dashboard</title>
+  <meta charset="UTF-8">
+  <title>Startup Dashboard - Startup Sentral</title>
   <style>
     body {
-      background-color: #f0e5dc;
-      font-family: Arial;
-      padding: 20px;
+      background-color: #fff3e6;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      margin: 0;
     }
-    label, select {
+
+    nav {
+      background-color: #8B4513;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    nav button {
+      padding: 8px 16px;
+      background-color: #d2a679;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+
+    form {
+      margin-top: 40px;
+      background: #fff;
+      padding: 30px;
+      display: inline-block;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    select, button, label {
       display: block;
-      margin: 10px 0;
-      width: 300px;
+      margin: 10px auto;
+      width: 250px;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #deb887;
+      color: #4b2e14;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c98f65;
     }
   </style>
 </head>
 <body>
+
+  <nav>
+    <img src="STARTUP-removebg-preview.png" class="logo" onclick="location.href='index.html'" />
+    <div>
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='about.html'">About</button>
+      <button onclick="location.href='contact.html'">Contact</button>
+    </div>
+  </nav>
+
   <h2>Startup Founder Dashboard</h2>
+
   <form>
     <label>Stage Identification</label>
-    <select><option>Idea</option><option>MVP</option><option>Growth</option><option>Series A+</option></select>
+    <select><option>Idea</option><option>MVP</option><option>Seed</option><option>Growth</option><option>Series A+</option></select>
 
     <label>Type of Product</label>
-    <select><option>Built</option><option>Beta</option><option>Live</option></select>
+    <select><option>Built</option><option>Beta</option><option>Launched</option></select>
 
     <label>Team Structure</label>
     <select><option>Tech</option><option>Ops</option><option>Business</option></select>
 
-    <!-- Add more as needed -->
+    <label>Registration</label>
+    <select><option>Yes</option><option>No</option></select>
+
+    <label>Initial Market</label>
+    <select><option>B2B</option><option>B2C</option></select>
+
+    <label>Traction</label>
+    <select><option>Users</option><option>Customers</option></select>
+
+    <label>Revenue</label>
+    <select><option>Yes</option><option>Recurring</option><option>No</option></select>
+
+    <label>Funding Needs</label>
+    <select><option>Seed</option><option>Series A</option><option>Series B</option></select>
+
+    <label>Metrics</label>
+    <select><option>CAC</option><option>LTV</option><option>Burn Rate</option></select>
+
+    <label>Branding</label>
+    <select><option>Website</option><option>Pitch Deck</option><option>Logo</option></select>
+
+    <label>Market Size</label>
+    <select><option>TAM</option><option>SAM</option><option>SOM</option></select>
+
+    <label>Competitive Advantage</label>
+    <select><option>Tech</option><option>Pricing</option><option>Distribution</option></select>
+
+    <label>Data Room Prepared</label>
+    <select><option>Yes</option><option>No</option></select>
+
+    <label>Legal & Compliance</label>
+    <select><option>Ready</option><option>In Progress</option></select>
+
+    <label>Exit Path Clarity</label>
+    <select><option>3-Year Vision</option><option>5-Year Vision</option></select>
+
+    <button type="submit">Submit Filters</button>
   </form>
+
 </body>
 </html>

@@ -1,33 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Investor Dashboard</title>
+  <meta charset="UTF-8">
+  <title>Investor Dashboard - Startup Sentral</title>
   <style>
     body {
-      background-color: #f4f1ea;
-      font-family: Arial;
-      padding: 20px;
+      background-color: #fff3e6;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      margin: 0;
     }
-    label, select {
+
+    nav {
+      background-color: #8B4513;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    nav button {
+      padding: 8px 16px;
+      background-color: #d2a679;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+
+    form {
+      margin-top: 40px;
+      background: #fff;
+      padding: 30px;
+      display: inline-block;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    select, button, label {
       display: block;
-      margin: 10px 0;
-      width: 300px;
+      margin: 10px auto;
+      width: 250px;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #deb887;
+      color: #4b2e14;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c98f65;
     }
   </style>
 </head>
 <body>
+
+  <nav>
+    <img src="STARTUP-removebg-preview.png" class="logo" onclick="location.href='index.html'" />
+    <div>
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='about.html'">About</button>
+      <button onclick="location.href='contact.html'">Contact</button>
+    </div>
+  </nav>
+
   <h2>Investor Dashboard</h2>
+
   <form>
     <label>Stage of Startup</label>
-    <select><option>Idea</option><option>MVP</option><option>Seed</option><option>Series A+</option></select>
+    <select><option>Idea</option><option>MVP</option><option>Seed</option><option>Series A</option></select>
 
     <label>Industry/Sector</label>
-    <select><option>Tech</option><option>Fintech</option><option>HealthTech</option></select>
+    <select><option>Tech</option><option>FinTech</option><option>HealthTech</option><option>D2C</option></select>
 
     <label>Founder Profile</label>
     <select><option>Full-time</option><option>Ex-FAANG</option><option>Domain Expert</option></select>
 
-    <!-- Add all other filters similarly -->
+    <label>Incorporation Docs</label>
+    <select><option>CIN</option><option>GST</option><option>Registered</option></select>
+
+    <label>Equity Structure</label>
+    <select><option>>50% Founder Owned</option><option>Clean Cap Table</option></select>
+
+    <label>Business Model</label>
+    <select><option>SaaS</option><option>B2B</option><option>Marketplace</option></select>
+
+    <label>Product Readiness</label>
+    <select><option>MVP</option><option>Beta</option><option>Live</option></select>
+
+    <label>Traction Metrics</label>
+    <select><option>MRR</option><option>ARR</option><option>Churn</option></select>
+
+    <label>Market Size</label>
+    <select><option>TAM</option><option>SAM</option><option>SOM</option></select>
+
+    <label>Customer Acquisition</label>
+    <select><option>Paying</option><option>Engaged</option></select>
+
+    <label>IP/Tech Edge</label>
+    <select><option>Patent</option><option>AI</option><option>Algorithm</option></select>
+
+    <label>Financial Metrics</label>
+    <select><option>EBITDA</option><option>Burn Rate</option><option>Runway</option></select>
+
+    <label>Use of Funds</label>
+    <select><option>Hiring</option><option>Marketing</option></select>
+
+    <label>Exit Potential</label>
+    <select><option>IPO</option><option>M&A</option></select>
+
+    <label>Legal Risks</label>
+    <select><option>Compliant</option><option>Disputes</option></select>
+
+    <button type="submit">Submit Filters</button>
   </form>
+
 </body>
 </html>

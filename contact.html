@@ -1,18 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact Us</title>
+  <meta charset="UTF-8">
+  <title>Contact - Startup Sentral</title>
   <style>
     body {
-      background-color: #4d2c24;
-      color: white;
+      background-color: #fff3e6;
+      font-family: 'Segoe UI', sans-serif;
       text-align: center;
-      font-family: Arial;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #8B4513;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    nav button {
+      padding: 8px 16px;
+      background-color: #d2a679;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+
+    .content {
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
-  <h1>Contact Us</h1>
-  <p>Phone: 1234567891</p>
+
+  <nav>
+    <img src="STARTUP-removebg-preview.png" class="logo" onclick="location.href='index.html'" />
+    <div>
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='about.html'">About</button>
+      <button onclick="location.href='contact.html'">Contact</button>
+    </div>
+  </nav>
+
+  <div class="content">
+    <h2>Contact Us</h2>
+    <p>Phone: 1234567891</p>
+  </div>
+
 </body>
 </html>
